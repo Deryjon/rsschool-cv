@@ -137,6 +137,7 @@
               <li>RS Schools «JavaScript/Front-end. Stage 0»</li>
             </ul>
           </section>
+
            <section class="portfolio">
             <div class="sub-header">
               <h3>Portfolio</h3>
@@ -145,7 +146,31 @@
               <li><a href="https://deryjon.github.io/burgers/">Burger Restaurant</a></li>
               <li><a href="https://spec-trans-deryjon.netlify.app/">Special-Trans</a></li>
             </ul>
-          </section> </aside>
+          </section> 
+          <section class="code-example">
+            <div class="sub-header">
+              <h3>Code example</h3>
+            </div>
+            <p><strong>Peak array index KATA from CODEWARS:</strong> Given an array of ints, return the index such that
+              the sum of the elements to the right of that index equals the sum of the elements to the
+              left of that index. If there is no such index, return -1. If there is more than one such index, return the
+              left-most index.</p>
+            <pre>
+              <code>
+  function peak(arr) {
+  
+    for (let i = 1; i &lt; arr.length - 1; i++) {
+      let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
+      let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
+  
+      if (leftSum === rightSum) return i;
+    }
+    return -1;
+  }</code>
+            </pre>
+          </section>
+        </aside>
+
       </div>
       <footer>
         <a class="my-github" href="https://github.com/Deryjon">
