@@ -103,7 +103,7 @@
               within the programming community have been invaluable in my
               learning journey.
             </p>
-            <p>
+            <p> 
               Each project I take on teaches me something new and pushes me to
               become a better developer. I strive to constantly improve the
               quality of my code and achieve exceptional results. Sometimes
@@ -145,7 +145,7 @@
               <li><a href="https://deryjon.github.io/burgers/">Burger Restaurant</a></li>
               <li><a href="https://spec-trans-deryjon.netlify.app/">Special-Trans</a></li>
             </ul>
-          </section> 
+          </section>
           <section class="code-example">
             <div class="sub-header">
               <h3>Code example</h3>
@@ -154,17 +154,6 @@
               the sum of the elements to the right of that index equals the sum of the elements to the
               left of that index. If there is no such index, return -1. If there is more than one such index, return the
               left-most index.</p>
-            <pre>
-              <code>
-  function peak(arr) {
-    for (let i = 1; i &lt; arr.length - 1; i++) {
-      let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
-      let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);  
-      if (leftSum === rightSum) return i;
-    }
-    return -1;
-  }</code>
-            </pre>
           </section>
         </aside>
       </div>
