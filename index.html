@@ -157,7 +157,7 @@
             <pre>
               <code>
   function peak(arr) {
-    for (let i = 1; i &lt; arr.length - 1; i++) {
+    for (let i = 1; i, arr.length - 1; i++) {
       let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
       let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);  
       if (leftSum === rightSum) return i;
