@@ -37,3 +37,8 @@ I handle HTTP requests using Axios and am skilled in writing both Composition AP
 - JWT Authentication
 - Swagger
 - DatePicker
+
+## Languages
+- Uzbek : National
+- Russian : Advanced
+- English: A2
