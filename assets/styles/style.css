@@ -91,10 +91,10 @@ a {
 
 /* Left */
 .about .container .left {
-  min-width: 380px;
+  min-width: 375px;
 }
 .about .container .left img {
-  width: 380px;
+  width: 375px;
 }
 .about .container .left {
   background: #343945;
@@ -153,6 +153,14 @@ a {
   font-weight: 400;
   padding-left: 50px;
   margin-bottom: 40px;
+}
+.about .container .right .about-me ul li {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 500;
+  padding-left: 50px;
+  margin-bottom: 40px;
+  list-style: ;
 }
 code {
   width: 300px;
