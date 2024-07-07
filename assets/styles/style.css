@@ -14,13 +14,16 @@ a {
   text-decoration: none;
 }
 .container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
 }
 /* Header */
 .header .navbar {
   background-color: #e6e6e6;
+  width: 100%;
 }
 .header .navbar .nav_list {
   display: none;
@@ -82,25 +85,102 @@ a {
 .about .container {
   display: flex;
 }
+
+/* Left */
 .about .container .left {
   max-width: 380px;
 }
 .about .container .left img {
   width: 380px;
 }
-.about .container .right {
-  width: 920px;
+.about .container .left {
+  background: #343945;
+  color: white;
 }
-.about .container .right .page-title{
+.about .container .left .title {
+  font-size: 24px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding-left: 50px;
+
+}
+.about .container .left .contact {
+    margin: 50px 0px;
+}
+.left .list {
     padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
 }
-.about .container .right .page-title h1{
+.left .list  .item{
+ font-size: 16px;
+}
+.about .container .left .education {
+  margin: 50px 0px;
+}
+/* Right */
+.about .container .right {
+  width: 700px;
+}
+.about .container .right .page-title {
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+.about .container .right .page-title h1 {
   font-size: 50px;
   margin-top: 150px;
 }
-.about .container .right .page-title p{
+.about .container .right .page-title p {
   font-size: 20px;
   margin-top: 15px;
+}
+.about .container .right .about-me h2 {
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  padding-left: 50px;
+  margin-bottom: 40px;
+}
+.about .container .right .about-me p {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 400;
+  padding-left: 50px;
+  margin-bottom: 40px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  width: 100%;
+  color: #ffffff;
+  background-color: #1e232c
+}
+
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer .github-icon {
+  margin-right: 10px;
+}
+
+.my-github {
+  display: flex;
+  align-items: center;
+}
+
+.log-rs{
+  width: 100px;
+
 }
 
 /* Media query */
