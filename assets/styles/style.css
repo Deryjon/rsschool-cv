@@ -18,6 +18,7 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+/* Header */
 .header .navbar {
   background-color: #e6e6e6;
 }
@@ -27,28 +28,28 @@ a {
   justify-content: space-between;
   padding: 20px;
 }
-.header  .nav_item a {
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
-    transition: 0.5s;
+.header .nav_item a {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
 }
 .header .nav_item a:hover {
-    color: blue;
+  color: blue;
 }
 .header .navbar .menu_list {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    position: fixed;
-    top: 20;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #e6e6e6;
-    z-index: 999;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  top: 20;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e6e6e6;
+  z-index: 999;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .header .navbar .menu_list.active {
   display: flex;
@@ -76,6 +77,33 @@ a {
 .menu-icon.active .line3 {
   transform: rotate(-50deg) translate(5px, -7px);
 }
+
+/* About Section */
+.about .container {
+  display: flex;
+}
+.about .container .left {
+  max-width: 380px;
+}
+.about .container .left img {
+  width: 380px;
+}
+.about .container .right {
+  width: 920px;
+}
+.about .container .right .page-title{
+    padding-left: 50px;
+}
+.about .container .right .page-title h1{
+  font-size: 50px;
+  margin-top: 150px;
+}
+.about .container .right .page-title p{
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+/* Media query */
 @media (min-width: 768px) {
   .menu-icon {
     display: none;
