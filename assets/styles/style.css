@@ -107,7 +107,13 @@ a {
   padding-left: 50px;
 }
 .about .container .left .contact {
-  margin: 50px 0px;
+  margin: 100px 0px;
+}
+.about .container .left .education {
+  margin: 100px 0px;
+}
+.about .container .left .languages {
+  margin: 100px 0px;
 }
 .left .list {
   padding-left: 50px;
